@@ -1,15 +1,8 @@
-const marsos = require('./03-Marsos')
-
+const marsos = require('./03-Marsos.js')
+const message = 'SOFSOSSISSOW'
 describe('Marsos', () => {
-    test('it should return true if message contain "sos"', () => {
-        const message = 'SOFSOSSISSOW'
-    }
-
-    expect(marsos(message)).toEqual(true)
+    test('it should return 3 if message contain sos', () => {
+        expect(marsos(message)).toEqual(3)
 })
+    })
 
-test('it should return false when message not contain "sos"', () => {
-    const sentence = "SOFSOSISSOW"
-
-    expect(marsos(message)).toEqual(false)
-})
